@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]">
+  <parameter name="Browser" value="IE"/>
+  <test name="Test1(failed)">
+    <parameter name="Browser" value="IE"/>
+    <classes>
+      <class name="restAPI.LearnAutomation">
+        <methods>
+          <include name="learnAction" invocation-numbers="0"/>
+          <include name="basicSetup"/>
+          <include name="captureScreenShot"/>
+          <include name="basicSetup"/>
+          <include name="captureScreenShot"/>
+        </methods>
+      </class> <!-- restAPI.LearnAutomation -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

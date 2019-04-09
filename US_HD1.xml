@@ -1,0 +1,13 @@
+<test>
+<body contentType="application/json" expandTokens="true">
+{
+"order": {
+   "orderType": "full",
+   "name":{  
+      "title":"Mr",
+      "firstName":"Candace",
+      "lastName":"Timmsen"
+   }
+}
+</body>
+</test>
