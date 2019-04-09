@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+Here parallel is an attribute which specify the mode of execution and thread-count specify how many browser should open
+<suite name="Suite" parallel="tests" thread-count="2">
+  <test name="Test">
+  <parameter name="Browser" value="FF" />
+    <classes>
+      <class name="restAPI.LearnAutomation"/>
+    </classes>
+  </test> 
+  
+  <test name="Test1">
+  <parameter name="Browser" value="IE" />
+ 	<classes>
+ 	  <class name="restAPI.LearnAutomation"/>
+ 	</classes>
+  </test>
+</suite> <!-- Suite -->
+

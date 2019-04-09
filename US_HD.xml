@@ -1,0 +1,75 @@
+<test>
+<body contentType="application/json" expandTokens="true">
+{
+"order": {
+   "orderType": "full",
+   "name":{  
+      "title":"Mr",
+      "firstName":"Candace",
+      "lastName":"Timmsen"
+   },
+  "address": [
+     {
+       "type": "home",
+       "address1": "23 Foobar Street",
+       "address2": "Foobar",
+       "city": "London",
+       "stateCode" : "AL",
+       "postalCode": "90001"
+      
+     }
+   ],
+   "contact":{  
+      "emailAddress":"vrushali.naik@travelex.com",
+      "homePhone":"9874563210"
+   },
+   "private":{  
+      "dateOfBirth":"1979-03-17"
+  },
+   "identification":{  
+     "IssuingCountryCode" : "US",
+     "IdType" : "passport",
+      "DateOfIssue": "2012-02-02",
+     "SerialNumber" : "123",
+     "ExpiryDate" : "2019-09-02"
+   },
+   "basketItems":[  
+      {  
+       "productCode": "NZD",
+       "domesticAmount":900,
+       "foreignAmount": 800,
+       "currencyCode": "USD"
+      }
+   ],
+   "fulfilment":{  
+      "fulfilmentType":"homeDelivery",
+      "fulfilmentOptionId":"4c66b68c-8060-44ff-a4ac-9857ced90c9f",
+      "requestedFulfilmentDate":"2019-03-29"
+   },
+   "payment":{  
+      "paymentOptionId":"af7bd4cc-8606-4137-8c35-c100de975474",
+      "paymentType":"card",
+      "card":{  
+         "type":"visa",
+         "funding":"unknown",
+         "firstName":"Candace",
+         "lastName":"Timmsen",
+         "expiryDate":"2020-01-01T00:00:00",
+         "paymentCardToken":"9910430245410013"
+      }
+   },
+
+   "loyalty": null,
+   "marketingOptIn": false,
+   "newsletterIds": null,
+   "clientIPAddress": "10.236.20.190",
+   "voucherCode": null,
+   "userId": null
+},
+"tempData": {
+   "PaymentCardPAN": "4462074306783794",
+   "PaymentCardCVV": "321"
+}
+}
+</body>
+</test>
