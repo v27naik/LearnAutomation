@@ -2,22 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42" started-at="2019-04-09T09:04:40Z" finished-at="2019-04-09T09:04:40Z">
+  <suite name="Failed suite [Default suite]" duration-ms="35499" started-at="2019-04-10T08:47:34Z" finished-at="2019-04-10T08:48:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42" started-at="2019-04-09T09:04:40Z" finished-at="2019-04-09T09:04:40Z">
-      <class name="restAPI.EmailReport">
-        <test-method status="FAIL" signature="f()[pri:0, instance:restAPI.EmailReport@4cf777e8]" name="f" duration-ms="17" started-at="2019-04-09T14:34:40Z" finished-at="2019-04-09T14:34:40Z">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[com/sun/mail/util/MailLogger]]>
-            </message>
+    <test name="Default test(failed)" duration-ms="35499" started-at="2019-04-10T08:47:34Z" finished-at="2019-04-10T08:48:09Z">
+      <class name="learnAuto.ExtentReport2">
+        <test-method status="FAIL" signature="verifyBlogTitle()[pri:0, instance:learnAuto.ExtentReport2@4f7d0008]" name="verifyBlogTitle" duration-ms="34993" started-at="2019-04-10T14:17:34Z" finished-at="2019-04-10T14:18:09Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: com/sun/mail/util/MailLogger
-	at javax.mail.Session.initLogger(Session.java:230)
-	at javax.mail.Session.<init>(Session.java:214)
-	at javax.mail.Session.getDefaultInstance(Session.java:325)
-	at restAPI.EmailReport.f(EmailReport.java:34)
+              <![CDATA[java.lang.NullPointerException
+	at learnAuto.ExtentReport2.verifyBlogTitle(ExtentReport2.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -43,19 +37,58 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: java.lang.ClassNotFoundException: com.sun.mail.util.MailLogger
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	... 29 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- restAPI.EmailReport -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- verifyBlogTitle -->
+        <test-method status="FAIL" signature="tearDown(org.testng.ITestResult)[pri:0, instance:learnAuto.ExtentReport2@4f7d0008]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-04-10T14:18:09Z" finished-at="2019-04-10T14:18:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBlogTitle status=FAILURE method=ExtentReport2.verifyBlogTitle()[pri:0, instance:learnAuto.ExtentReport2@4f7d0008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at learnAuto.ExtentReport2.tearDown(ExtentReport2.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- learnAuto.ExtentReport2 -->
+    </test> <!-- Default test(failed) -->
+  </suite> <!-- Failed suite [Default suite] -->
 </testng-results>
