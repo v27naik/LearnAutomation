@@ -3,12 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="learnAuto.ExtentReport2">
         <methods>
           <include name="tearDown"/>
           <include name="verifyBlogTitle"/>
         </methods>
       </class> <!-- learnAuto.ExtentReport2 -->
+=======
+      <class name="restAPI.EmailReport">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- restAPI.EmailReport -->
+>>>>>>> refs/remotes/origin/part1
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
